@@ -12,5 +12,5 @@ if __name__ == '__main__':
         Pitagoras(co, ca)
 
         continua = input('\nDeseja sair? Digite q ou Enter para um novo cálculo: \n')
-        if (continua == 'q'):
+        if (continua == 'Sim'):
             break
