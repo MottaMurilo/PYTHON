@@ -40,3 +40,28 @@ def calcular():
          l_resultado_texto['text'] = "Seu IMC é: Sobrepeso"
     else:
         l_resultado_texto['text'] = "Seu IMC é: Obesidade"
+
+            l_resultado['text']= "{:.{}f}".format(resultado, 2)
+
+
+l_peso = Label(frame_baixo, text='Insira seu peso:', height=1, padx=0, relief='flat', anchor='center', font=('Ivy 10 bold '), bg=cor0, fg=cor1)
+l_peso.grid(row=0, column=0, sticky=NSEW, pady=10, padx=3)
+e_peso = Entry(frame_baixo,width=5, relief='solid', font=('Ivy 10 bold '), justify='center')
+e_peso.grid(row=0, column=1, sticky=NSEW, pady=10, padx=3)
+
+l_altura = Label(frame_baixo, text='Insira sua altura:', height=1, padx=0, relief='flat', anchor='center', font=('Ivy 10 bold '), bg=cor0, fg=cor1)
+l_altura.grid(row=1, column=0, sticky=NSEW, pady=10, padx=3)
+l_altura = Entry(frame_baixo,width=5, relief='solid', font=('Ivy 10 bold '), justify='center')
+l_altura.grid(row=1, column=1, sticky=NSEW, pady=10, padx=3)
+
+l_resultado = Label(frame_baixo, text='---', width=5, height=1, padx=6, pady=12, relief='flat', anchor='center', font=('Ivy 24 bold '), bg=cor1, fg= cor0)
+l_resultado.place(x=175, y=10)
+
+l_resultado_texto = Label(frame_baixo, text='', width=37, height=1, padx=0, pady=12, relief='flat', anchor='center', font=('Ivy 10 bold '), bg=cor0, fg= cor1)
+l_resultado_texto.place(x=0, y=90)
+
+b_calcular = Button(frame_baixo, command=calcular, text='Calcular', width=34, height=1, overrelief=SOLID, relief='raised', anchor='center', font=('Ivy 10 bold '), bg=cor2, fg= cor0)
+b_calcular.grid(row=4, column=0, sticky=NSEW, pady=60, padx=5, columnspan=30)
+
+
+janela.mainloop()
