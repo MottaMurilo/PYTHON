@@ -1,3 +1,5 @@
+#  Calculadora feita 110% em Python.
+
 from os import system
 from os import sys
 
