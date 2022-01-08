@@ -6,7 +6,7 @@ from ffpyplayer.player import MediaPlayer
 
 video_name = input("Nome do vídeo que você quer reproduzir:   ")
 
-video_directory_guess = input("Diretório em que o vídeo está alocado:    ")
+video_directory_guess = input("Diretório em que o vídeo está alocado:   ")
 
 
 def find_the_video(file_name, directory_name):
