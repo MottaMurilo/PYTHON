@@ -4,7 +4,7 @@ from pathlib import Path
 from ffpyplayer.player import MediaPlayer
 
 
-video_name = input("Nome do vídeo que você quer reproduzir:    ")
+video_name = input("Nome do vídeo que você quer reproduzir:   ")
 
 video_directory_guess = input("Diretório em que o vídeo está alocado:    ")
 
