@@ -26,38 +26,36 @@ allow = True
 while allow:
 
     user_code = input(
-        f"Please input desired language code. To see the language code list enter 'options' \n")
+        f"Escolha a linguagem que você deseja traduzir. Caso contrário digite opções. \n")
 
-    if user_code == "options":
+    if user_code == "opções":
         print("Code : Language")
         for i in language.items():
             print(f"{i[0]} => {i[1]}")
-        print()  # adding an empty space
+        print()
 
-    else:  # validating user input
+    else:
         for lan_code in language.keys():
             if lan_code == user_code:
-                print(f"You have selected {language[lan_code]}")
+                print(f"Você selecionou {language[lan_code]}")
                 allow = False
         if allow:
-            print("It's not a valid language code!")
+            print("Essa linguagem não é valida!")
 
-while True:  # starting translation loop
+while True:
     string = input(
-        "\nWrite the text you want to translate: \nTo exit the program write 'close'\n")
+        "\nDigite o texto que você deseja traduzir: \nPara sair digite 'fechar'\n")
 
-    if string == "close":  # exit program command
-        print(f"\nHave a nice Day!")
+    if string == "fechar":
+        print(f"\nTenha um bom dia!")
         break
 
-    # translating method from googletrans
     translated = translator.translate(string, dest=user_code)
 
-    # printing translation
-    print(f"\n{language[user_code]} translation: {translated.text}")
-    # printing pronunciation
-    print(f"Pronunciation : {translated.pronunciation}")
+    print(f"\n{language[user_code]} tradução: {translated.text}")
+    
+    print(f"Pronúncia: {translated.pronunciation}")
 
-    for i in language.items():  # checking if the source language is listed on language dict and printing it
+    for i in language.items():
         if translated.src == i[0]:
-            print(f"Translated from : {i[1]}")
+            print(f"Traduzido do: {i[1]}")
