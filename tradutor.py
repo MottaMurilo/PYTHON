@@ -21,15 +21,15 @@ language = {"bn": "Bangla",
             "pt": "Portuguese"
             }
 
-allow = True  # variable to control correct language code input
+allow = True
 
-while allow:  # checking if language code is valid
+while allow:
 
     user_code = input(
         f"Please input desired language code. To see the language code list enter 'options' \n")
 
-    if user_code == "options":  # showing language options
-        print("Code : Language")  # Heading of language option menu
+    if user_code == "options":
+        print("Code : Language")
         for i in language.items():
             print(f"{i[0]} => {i[1]}")
         print()  # adding an empty space
