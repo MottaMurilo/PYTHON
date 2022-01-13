@@ -31,4 +31,4 @@ while True:
     if cpf == novo_cpf and not sequencia:
         print('O CPF inserido é válido!')
     else:
-        print('Inválido')
+        print('O CPF inserido é inválido!')
