@@ -1,2 +1,3 @@
 # PYTHON
-A repository for post things in general using python.
+
+# Esse repositório serve de base para eu salvar meus projetos em python!
