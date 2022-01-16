@@ -1,4 +1,4 @@
-# Loop infinito
+
 while True:
     # cpf = '16899535009'
     cpf = input('Digite um CPF: ')
