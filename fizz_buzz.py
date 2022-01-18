@@ -1,3 +1,5 @@
+# Caso o valor seja divisivel por 2, imprima 'fizz', caso seja por 5, imprima 'buzz', caso seja 5 e 3, imprima 'fizz buzz'
+
 def fizz()
  valor = int(input('Digite um valor: '))
   
