@@ -18,3 +18,8 @@ plt.bar (x2, valores_produto_B, width=0.25, label = 'Produto B', color = 'medium
 # Coloca o nome dos meses como label do eixo x
 meses = ['Agosto','Setembro', 'Outubro', 'Novembro', 'Dezembro']
 plt.xticks([x + 0.25 for x in range(len(valores_produto_A))], meses)
+
+#Insere uma legenda no gráfico
+plt.legend()
+plt.title("Quantidade de Vendas")
+plt.show()
